@@ -1,11 +1,14 @@
 <template>
+<div>
     <div>
-        <h1>Navbar</h1>
+        <NuxtLink to="/about">About</NuxtLink> 
+        <NuxtLink to="/contact">Contact</NuxtLink> 
+        <NuxtLink to="/recipes">Recipes</NuxtLink> 
     </div>
+</div>
 </template>
 
 <script>
-export default {
-  name: 'NavBar'
-}
+    export default {
+    }
 </script>
