@@ -36,7 +36,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    //loading the @nuxtjs/apollo module
+    '@nuxtjs/apollo'
   ],
+
+  //set Apollo configuration
+  apollo: {
+    clientConfigs: {
+      default: {
+        //We want to be able to access our GraphQL playground when we go to this link
+        httpEndpoint: 'http://localhost:1337/graphql',
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
