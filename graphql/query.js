@@ -2,14 +2,14 @@
 
 //We will use gql for formatting the query and exporting it
 import gql from 'graphql-tag';
-export const allRecipeQuery = gql`
+export const allRecipesQuery = gql`
     query Recipes{
         recipes {
             data {
+                id
                 attributes {
                     Title
                     Date
-                    Bannere
                     Content
                     Recipe
                     Banner {
