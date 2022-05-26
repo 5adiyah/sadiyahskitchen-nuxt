@@ -20,6 +20,13 @@ export const allRecipesQuery = gql`
                             }
                         }
                     }
+                    categories {
+                        data {
+                          attributes {
+                            Name
+                          }
+                        }
+                      }
                 }
             }
         }
