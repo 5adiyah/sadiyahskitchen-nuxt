@@ -1,11 +1,9 @@
 <template>
   <div>
       <h1>Recipes Page</h1>
-        {{
-            !!recipes?.data[0]?.attributes?.Title
-            ? recipes.data[0].attributes.Title
-            : `The query did not work`
-        }}
+        <div v-for="recipe in recipes.data" v-bind:key="recipe.id">
+           <pre>{{ recipe.attributes.Title }}</pre>
+        </div>
   </div>
 </template>
 
